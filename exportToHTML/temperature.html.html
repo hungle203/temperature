@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>temperature.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #c9c9d1;}
+.s1 { color: #e0957b;}
+.s2 { color: #ffffff;}
+.s3 { color: #62a362;}
+.s4 { color: #4dacf0;}
+</style>
+</head>
+<body bgcolor="#1d1d26">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+temperature.html</font>
+</center></td></tr></table>
+<pre>
+<span class="s1">&lt;!DOCTYPE </span><span class="s2">html</span><span class="s1">&gt;</span>
+<span class="s1">&lt;html </span><span class="s2">lang</span><span class="s3">=&quot;en&quot;</span><span class="s1">&gt;</span>
+<span class="s1">&lt;head&gt;</span>
+    <span class="s1">&lt;meta </span><span class="s2">charset</span><span class="s3">=&quot;UTF-8&quot;</span><span class="s1">&gt;</span>
+    <span class="s1">&lt;title&gt;</span><span class="s0">Chuyển đổi nhiệt độ</span><span class="s1">&lt;/title&gt;</span>
+<span class="s1">&lt;/head&gt;</span>
+<span class="s1">&lt;body&gt;</span>
+<span class="s1">&lt;script&gt;</span>
+    <span class="s1">class </span><span class="s0">Temperature {</span>
+        <span class="s0">celcius</span>
+
+        <span class="s0">constructor(celcius) {</span>
+            <span class="s1">this</span><span class="s0">.celcius = celcius</span>
+        <span class="s0">}</span>
+
+        <span class="s0">getFahrenheit() {</span>
+            <span class="s1">return </span><span class="s0">(</span><span class="s1">this</span><span class="s0">.celcius * </span><span class="s4">9 </span><span class="s0">/ </span><span class="s4">5</span><span class="s0">) - </span><span class="s4">32</span>
+        <span class="s0">}</span>
+
+        <span class="s0">getKelvin () {</span>
+            <span class="s1">return this</span><span class="s0">.celcius + </span><span class="s4">273.15</span>
+        <span class="s0">}</span>
+    <span class="s0">}</span>
+
+    <span class="s1">let </span><span class="s0">temperC = </span><span class="s1">new </span><span class="s0">Temperature(</span><span class="s4">25</span><span class="s0">)</span>
+    <span class="s0">document.write(</span><span class="s3">`25 độ C tương đương với </span><span class="s0">${temperC.getFahrenheit()} </span><span class="s3">độ F`</span><span class="s0">)</span>
+    <span class="s0">document.write(</span><span class="s3">` và </span><span class="s0">${temperC.getKelvin()} </span><span class="s3">độ K`</span><span class="s0">)</span>
+<span class="s1">&lt;/script&gt;</span>
+<span class="s1">&lt;/body&gt;</span>
+<span class="s1">&lt;/html&gt;</span></pre>
+</body>
+</html>
